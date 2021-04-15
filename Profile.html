@@ -1,112 +1,199 @@
 <!DOCTYPE html>
 <html>
-<style>
-    .mark {
-        margin-left: 40px;
-        margin-right: 60px;
-    }
-    .section {
-        position:relative;
-        height: 100px;
-       
 
-    }
-    .section1 {
-     position: absolute;
-     left: 0;
-     right: 30%;
-    
-    }
-    .section2 {
-        position: absolute;
-        right: 0;
-        left: 70%;
-        bottom: 30px;
-}
-    img {
-        text-align: left;
-        width: 3cm;
-        height: 3cm;
-    }
-    nav li:hover {
-    animation-name: color;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-  }
-    @keyframes color {
-  100% {
-    color: #be8c41;
-  }
-}
-    .section3 {
-        margin: 0px 150px 0px 150px;
-        background-image: image("D:\Camera\IMG20201010092859.jpg");
-    }
-     .section4 {
-         background-color: white
-     }   
-    #navbar {
-         background-color: rgb(255, 255, 255);
-        color: #5286b8;
-        text-align: right;
-        display: inline;
-        position: fixed;
-        margin-left: 100px;
-       
-    }
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            transition: background-color 0.5s;
+        }
 
-    h1 {
-        color: #c93232;
-        font-size: 40px;
-        text-indent: 10px;
-    }
+        .mark {
+            margin-top: 20px;
+            margin-right: 0px;
+            background-color: white;
+        }
 
-    h2 {
-        font-size: 30px;
-        text-align: center;
-    }
+        .div {
 
-    h3 {
-        text-align: center;
-    }
+            height: 100px;
 
-    nav ul {
-        margin: 0px;
-        padding: 5px 0px 5px 30px;
-    }
 
-    nav li {
-        display: inline;
-        margin-right: 20px;
+        }
 
-    }
+        .div1 {
+            float: left;
+            left: 10%;
+            right: 30%;
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-</style>
-<title>My Profile</title>
-<section class="mark">
-    <section class="section">
-        <section class="section1"><img src="D:\Camera\20161224_174750.jpg"></section>
-        <section class="section2">
-            <nav id="navbar">
-                <ul>
-                    <li><a href=""><strong>HOME</a></li>
-                    <li><a href="https://github.com/Lary-Marc"><strong>PROFILE</a></li>
-                    <li><a href="https://project-proposal.casual.pm/"><strong>PROJECTS</a></li>
-                </ul>
-            </nav>
-        </section>
-    </section>
-    <section class="section4">
-     <section class="section3">
-        <h1>WELCOME</h1>
-        <h2><strong>Hello, I am Mukuye Mark</h2>
-        <h3>I use HTML 5, CSS and JavaScript to build good websites</h3>
-     </section>
-    </section>
-</section>
+        }
+
+        .div2 {
+            float: right;
+            right: 0;
+            left: 85%;
+            bottom: 30px;
+        }
+
+        img {
+            text-align: left;
+            width: 3cm;
+            height: 3cm;
+        }
+
+        nav li:hover {
+            animation-name: color;
+            animation-duration: 500ms;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes color {
+            100% {
+                color: #be8c41;
+            }
+        }
+
+        .div3 {
+            background-image: image("D:\Camera\IMG20201010092859.jpg");
+        }
+
+        .div4 {
+            background-color: white;
+            margin-top: 30px;
+        }
+
+        #navbar {
+            background-color: rgb(255, 255, 255);
+            color: #5286b8;
+            text-align: right;
+            display: inline;
+            position: fixed;
+            margin-left: 100px;
+
+        }
+
+        h1 {
+            color: #c93232;
+            font-size: 40px;
+            text-indent: 10px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        nav ul {
+            margin: 0px;
+            padding: 5px 0px 5px 30px;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(17, 17, 17);
+            
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #6f706f;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #580303;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+    <title>My Profile</title>
+</head>
+
+<body>
+    <div class="mark" id="main">
+        <div class="div">
+            <div class="div1"><img src="D:\Camera\20161224_174750.jpg"></div>
+            <div class="div2">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="https://github.com/Lary-Marc"><strong>PROFILE</a>
+                    <a href="https://github.com/Lary-Marc"><strong>PROJECTS</a>
+                </div>
+                <div id="main">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<i class="fa fa-home"><a
+                                href="#"></a></i></span>
+                </div>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                        document.getElementById("main").style.marginLeft = "250px";
+                        document.body.style.backgroundColor = "white";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                        document.getElementById("main").style.marginLeft = "10px";
+                        document.body.style.backgroundColor = "white";
+                    }
+                </script>
+
+            </div>
+        </div>
+        <div class="div4">
+            <div class="div3">
+                <h1>WELCOME TO MY WORLD</h1>
+                <h2><strong>Hello, I am Mukuye Mark</h2>
+                <h3>I use HTML 5, CSS and JavaScript to build good websites</h3>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>
