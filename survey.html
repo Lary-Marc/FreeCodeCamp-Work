@@ -7,16 +7,16 @@
         header {
             background-color: teal;
             text-align: center;
-            padding-top: 10px;
+            padding-top: 20px;
             padding-bottom: 20px;
             height: 20px;
             color: rgb(235, 235, 235);
         }
-        
+
 
         body {
             position: relative;
-
+            margin: 10px 20px;
 
         }
 
@@ -24,33 +24,46 @@
             font-size: 17px;
             font-style: italic;
             font-weight: bold;
-            color: tomato;
+            color: rgb(0, 0, 0);
         }
 
         article {
             padding: 20px 0px 0 20px;
-            margin: 30px 100px 0 80px;
-            background-color: rgb(255, 255, 255);
-            height: 1000px;
-            
+            margin: 30px 50px 0 50px;
+            background-color: rgb(241, 241, 241);
+            height: 1080px;
+            padding-bottom: 1px solid teal;
         }
+
         .fieldset {
             margin-right: 70%;
 
         }
-legend {
-    color: rgb(87, 49, 0);
-    float: left;
-}
+
+        legend {
+
+            float: left;
+        }
+
         section {
             height: max-content;
             background-color: teal;
             padding-top: 20px;
-        
+
         }
-label, textarea {
-    color: brown;
+option {
+    font-style: italic;
+    font-weight: bold;
 }
+        label {
+            margin-right: 10px;
+        }
+
+        .div1 input {
+            padding-left: 10px;
+            width: 300px;
+        }
+
         div {
             margin-top: 20px;
         }
@@ -70,32 +83,38 @@ label, textarea {
         <h1>Survey Form</h1>
     </header>
     <section>
-        <article>
+        <article class="position-relative">
             <form>
                 <div>
                     <h2>Let us know how we can improve FreeCodeCamp</h2>
+
                     <div class='col-md-4'>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name-label" name="name" placeholder="Your Name">
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="text" id="email-label" name="email" placeholder="Your Email">
-                        </div>
-                        <div>
-                            <label for="age">Age:</label>
-                            <input type="number" id="number-label" name="age" placeholder="Your Age">
-                        </div>
-                        <div>
-                            <label for="user">User</label>
-                            <select id="user" name="user" placeholder="select an option">
-                                <option value="usa">Student</option>
-                                <option value="usa">Tutor</option>
-                                <option value="usa">Guest</option>
-                            </select>
+                        <div class="div1">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name-label" name="name" placeholder="Your Name">
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="text" id="email-label" name="email" placeholder="Your Email">
+                            </div>
+                            <div>
+                                <label for="age">Age:</label>
+                                <input type="number" min="1" step="1" id="number-label" name="age"
+                                    placeholder="Your Age">
+                            </div>
+                            <div>
+                                <label for="user">User:</label>
+                                <select id="user" name="user" placeholder="select an option">
+                                    <option value="usa">Student</option>
+                                    <option value="usa">Tutor</option>
+                                    <option value="usa">Guest</option>
+                                </select>
+                            </div>
                         </div>
                         <div>
 
-                            <legend><p>Would do you recommend Freecodecamp to a friend?</p></legend>
+                            <legend>
+                                <p>Would do you recommend Freecodecamp to a friend?</p>
+                            </legend>
                             <div>
                                 <input id="highly" type="radio" name="levels" value="highly">
                                 <label for="highly">Definitely</label>
@@ -115,7 +134,9 @@ label, textarea {
 
                         </div>
                         <div>
-                            <legend><p>What do you like most in FCC</p></legend>
+                            <legend>
+                                <p>What do you like most in FCC</p>
+                            </legend>
                             <select id="pefer" name="prefer">
                                 <option value="none" selected disabled hidden>select an option</option>
                                 <option value="prefer">Resposive Web Design</option>
@@ -125,7 +146,9 @@ label, textarea {
                         </div>
                         <div>
                             <fieldset>
-                                <legend><p>What should be improved?(Check all that apply)</p></legend>
+                                <legend>
+                                    <p>What should be improved?(Check all that apply)</p>
+                                </legend>
                                 <div>
                                     <label for="html and css"><input id="html" type="checkbox">HTML&CSS</label>
                                 </div>
@@ -146,7 +169,7 @@ label, textarea {
                         <textarea placeholder="comment" id="text" style=width:400px;></textarea>
                     </div>
                     <div class="footer">
-                        <button type="submit">SUBMIT</button>
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
                     </div>
             </form>
         </article>
