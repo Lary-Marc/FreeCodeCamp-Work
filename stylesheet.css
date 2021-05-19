@@ -1,0 +1,232 @@
+body {
+    font-family: "Perpetua";
+    background-color: #f6fdff;
+    background-size: contain;
+    background-image: url(./images/coding-on-laptop_4460x4460-e1537450504196.jpg);
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: #ffffff;
+    color: #2b546a;
+    height: 65px;
+    display: block;
+    border-color: white;
+    box-sizing: border-box;
+    margin-top: -20px;
+
+}
+
+.header-logo {
+    float: left;
+    font-size: 39px;
+    padding: 10px 40px;
+}
+
+.header-list li {
+    float: left;
+    padding: 20px 20px;
+    font-size: 17px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    padding: 30px 50px;
+    margin-top: 30px;
+}
+
+.copy-container h1 {
+    font-size: 15px;
+    color: rgb(18, 59, 243);
+}
+
+p {
+    padding: 10px 40px;
+    font-size: 15px;
+}
+
+.copy-container {
+    height: 90px;
+}
+
+.contents {
+    height: 320px;
+    margin-top: 20px;
+   
+
+}
+
+
+.section-title {
+
+    font-size: 28px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    padding: 0px 50px;
+}
+
+.contents-item {
+    float: left;
+    margin-right: 17.5px;
+    padding-left: 10px;
+}
+
+.contents-item p {
+    font-size: 24px;
+    margin-top: 15px;
+    color: rgb(7, 44, 255);
+}
+
+.contents-item p:hover {
+    animation-name: color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes color {
+    100% {
+        color: #d10000;
+    }
+}
+
+.contact-form {
+    padding-top: 100px;
+}
+
+.footer {
+
+    color: rgb(0, 0, 0);
+    height: 250px;
+    padding-top: 20px;
+    background-color: white;
+
+}
+
+.submit {
+    color: rgb(14, 36, 33);
+    font-size: 15px;
+    background-color: darkturquoise;
+    width: 90px;
+    font-weight: bold;
+}
+
+.submit:hover {
+    animation-name: bcolor;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bcolor {
+    100% {
+        color: #0e9c6d;
+    }
+}
+
+.footer-logo {
+    float: left;
+    font-size: 35px;
+    padding: 20px 40px;
+}
+
+.footer-list {}
+
+.list {
+    float: left;
+    padding: 20px 30px;
+}
+
+.list a {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: rgb(62, 122, 161);
+}
+
+.section {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 120px;
+    width: 70%;
+    padding: 0px 10px;
+}
+
+.progress a {
+    text-decoration: none;
+}
+
+.progressbar {
+    float: right;
+    width: 100px;
+    margin-top: 110px;
+    color: white;
+
+}
+
+.h3 {
+    padding: 40px 40px;
+    text-align: left;
+    float: left;
+    font-size: 10px;
+}
+
+.user-profile__separator {
+    background-color: #a3a3a3;
+    width: 1px;
+    height: 90px;
+    display: flex;
+    margin: 15px 0 10px 0;
+}
+
+.dv {
+    height: 200px;
+    background-color: white;
+    width: 70%;
+}
+
+.div1 {
+    display: inline-flex;
+    width: 40%;
+    padding: 30px 0 20px 0;
+}
+.div2 {
+    padding: 30px 0 20px 0;
+}
+
+.div1 img {
+    width: 70px;
+    border-radius: 90px;
+   
+}
+
+.p {
+
+    padding-left: 20px;
+}
+
+.button {
+    color: white;
+    background-color: orangered;
+}
+
+button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+    100% {
+        background-color: #4791d0;
+    }
+}
+h3 {
+   font-size: 44px; 
+}
